@@ -18,7 +18,7 @@
 
 .card-component {
   display: flex;
-
+  justify-content: space-around;
   background-color: rgba(2, 37, 63, 0.8);
   margin: 5px;
   padding: 10px;
@@ -32,5 +32,6 @@
 }
 
 .info {
+  justify-content: space-around;
   display: flex;
 }

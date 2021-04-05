@@ -22,17 +22,16 @@ function Test() {
 
 export default Test;
 
-export function Card(props) {
-  console.log(props.elements);
+export function Card({ id, img, title, link, description }) {
   return (
     <div className="card-component">
       <div className="img-box">
-        <img src={props.elements.img} width="100" height="100" alt="card img" />
+        <img src={img} width="100" height="100" alt="card img" />
       </div>
       <div className="card-body">
-        <h4>{props.elements.title}</h4>
-        <p>{props.elements.description}</p>
-        <a href={props.elements.link}>this is my card link </a>
+        <h4>{title}</h4>
+        <p>{description}</p>
+        <a href={link}>this is my card link </a>
       </div>
     </div>
   );
